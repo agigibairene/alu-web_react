@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-body p{
+  text-align: left;
+}
+
+.App-body{
+  padding-block: 15rem;
+  margin-left: 2rem ;
+  min-height: 100%;
+}
+
+.App-logo {
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  border-bottom: 5px solid crimson;
+}
+
+.App-header img{
+  width: 300px;
+}
+
+
+h1{
+  color: crimson;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.App-footer{
+  border-top: 5px solid crimson;
+  font-style: italic;
+  padding-block: 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+
