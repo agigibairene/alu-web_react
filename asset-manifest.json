@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/alu-web_react/static/css/main.b588afad.css",
+    "main.js": "/alu-web_react/static/js/main.91945e61.js",
+    "static/js/871.f86e9e03.chunk.js": "/alu-web_react/static/js/871.f86e9e03.chunk.js",
+    "index.html": "/alu-web_react/index.html",
+    "main.b588afad.css.map": "/alu-web_react/static/css/main.b588afad.css.map",
+    "main.91945e61.js.map": "/alu-web_react/static/js/main.91945e61.js.map",
+    "871.f86e9e03.chunk.js.map": "/alu-web_react/static/js/871.f86e9e03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b588afad.css",
+    "static/js/main.91945e61.js"
+  ]
+}
