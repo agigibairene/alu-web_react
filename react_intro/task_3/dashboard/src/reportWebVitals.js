@@ -1,4 +1,13 @@
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+const reportWebVitals = onPerfEntry => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
 
-configure({ adapter: new Adapter() });
+export default reportWebVitals;
