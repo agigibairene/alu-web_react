@@ -1,5 +1,10 @@
-.app {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+}
+
+:root {
+  --holb-red: #FF0000;
 }

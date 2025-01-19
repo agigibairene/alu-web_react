@@ -1,23 +1,26 @@
-import React from "react";
-import CourseListRow from "./CourseListRow";
-import { render, screen } from "@testing-library/react";
+import React from 'react';
+import { shallow } from 'enzyme';
+import CourseListRow from './CourseListRow';
 
-describe("Course List row", () => {
-    it("should render the first and second if the isHeader is true", () => {
-        render(<CourseListRow isHeader={true} textFirstCell="First" textSecondCell="Second" />);
-        screen.getByText("First");
-        screen.getByText("Second");
+describe('<CourseListRow />', () => {
+    it('renders an <CourseListRow /> component', () => {
+        const wrapper = shallow(<CourseListRow />);
+        expect(wrapper).toHaveLength(1);
     });
 
-    it("should render only the first element if the isHeader is true and the second element is null", () => {
-        render(<CourseListRow isHeader={true} textFirstCell="First" textSecondCell={null} />);
-        screen.getByText("First");
+	it('renders a <CourseListRow /> component with isHeader set to true and textSecondCell === null', () => {
+        const wrapper = shallow(<CourseListRow isHeader={true} />);
+        expect(wrapper.find('th')).toHaveLength(1);
+        expect(wrapper.find('th').get(0).props.colSpan).toEqual(2);
     });
 
-    it("should render the two element if the header is false", () => {
-        render(<CourseListRow isHeader={false} textFirstCell="First" textSecondCell="Second" />);
-        screen.getByText("First");
-        screen.getByText("Second"); 
+    it('tests the component renders two cells when textSecondCell is present', () => {
+        const wrapper = shallow(<CourseListRow isHeader={true} textSecondCell="Holberton Second"/>);
+        expect(wrapper.find('th')).toHaveLength(2);
+    });
+
+    it('tests the component renders correctly two td elements within a tr element when isHeader is false', () => {
+        const wrapper = shallow(<CourseListRow isHeader={false} />);
+        expect(wrapper.find('tr td')).toHaveLength(2);
     })
-
-})
+});
