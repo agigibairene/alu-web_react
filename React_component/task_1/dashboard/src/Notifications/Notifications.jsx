@@ -1,3 +1,4 @@
+import React from "react";
 import "./Notifications.css";
 import close from "../assets/close.png";
 import NotificationItem from "./NotificationItem";

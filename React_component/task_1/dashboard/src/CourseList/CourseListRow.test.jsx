@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+import React from "react";
 import CourseListRow from "./CourseListRow";
 import { render, screen } from "@testing-library/react";
 

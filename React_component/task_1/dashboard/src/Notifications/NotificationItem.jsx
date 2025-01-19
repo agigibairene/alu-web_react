@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 export default function NotificationItem({ type, value, html }) {
   if (html) {
     return (
